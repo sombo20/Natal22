@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>Vicentinho na banda</title>
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style type="text/css">
 @font-face { 
 	font-family: Androgyne; 
@@ -114,25 +114,25 @@ animation: snow 10s linear infinite;
 	function tree(n){	
            for(var i = 1; i < n; i++){
 		for(var j = 1; j < i + 1; j++){
-			text("*")
-		}
-			text("<br>")
-	     }
-	}
+		    text("*")
+		  }
+		    text("<br>")
+	        }
+	   }
 	tree(25)
 	
 	let valid = true;
 	
 	function somBackground(){
             const som = $("#audio")
-			if(valid){
-			som.play()
-				valid = false
-			}else{
-				som.pause()
-				valid = true
-			}
-		}
+		if(valid){
+		   som.play()
+		   valid = false
+		}else{
+		   som.pause()
+		   valid = true
+	        }
+	  }
 	</script>
 </body>
 </html>
