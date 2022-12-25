@@ -112,21 +112,21 @@ animation: snow 10s linear infinite;
 	let text = (type)  => treeElementHtml.innerHTML +=type 
 	
 	function tree(n){	
-		for(var i = 1; i < n; i++){
-			for(var j = 1; j < i + 1; j++){
+           for(var i = 1; i < n; i++){
+		for(var j = 1; j < i + 1; j++){
 			text("*")
 		}
 			text("<br>")
-	  }
+	     }
 	}
 	tree(25)
 	
 	let valid = true;
 	
 	function somBackground(){
-		const som = $("#audio")
+            const som = $("#audio")
 			if(valid){
-				som.play()
+			som.play()
 				valid = false
 			}else{
 				som.pause()
